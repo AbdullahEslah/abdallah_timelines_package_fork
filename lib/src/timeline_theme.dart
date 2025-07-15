@@ -334,7 +334,7 @@ class TimelineThemeData with Diagnosticable {
     // Warning: For the sanity of the reader, please make sure these properties
     // are in the exact same order as in operator == and in the raw constructor
     // and in the order of fields in the class and in the lerp() method.
-    final values = Object.hashAll([direction,
+    final hashedValues = Object.hashAll([direction,
       color,
       nodePosition,
       nodeItemOverlap,
@@ -342,7 +342,7 @@ class TimelineThemeData with Diagnosticable {
       indicatorTheme,
       connectorTheme,]);
   
-    return values;
+    return hashedValues;
   }
 
   @override
