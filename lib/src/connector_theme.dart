@@ -89,7 +89,7 @@ class ConnectorThemeData with Diagnosticable {
     //   thickness,
     //   indent,
     // );
-    Object.hash(color, space, thickness, indent);
+    return Object.hash(color, space, thickness, indent);
   }
 
   @override
