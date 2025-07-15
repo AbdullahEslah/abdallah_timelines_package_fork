@@ -83,12 +83,13 @@ class ConnectorThemeData with Diagnosticable {
 
   @override
   int get hashCode {
-    return hashValues(
-      color,
-      space,
-      thickness,
-      indent,
-    );
+    // return hashValues(
+    //   color,
+    //   space,
+    //   thickness,
+    //   indent,
+    // );
+    Object.hash(color, space, thickness, indent);
   }
 
   @override
